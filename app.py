@@ -127,4 +127,5 @@ def ingredient_analysis():
     return render_template('ingredient_analysis.html', safety_issues=[])
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
