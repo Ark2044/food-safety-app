@@ -13,8 +13,8 @@ The AI-Powered Food Safety Detection application leverages machine learning and 
 
 ## Technologies Used
 - **Backend**: Python with Flask
-- **Frontend**: HTML, CSS, Bootstrap
-- **Machine Learning**: OpenCV for image processing, Pytesseract for OCR
+- **Frontend**: HTML, TailwindCSS
+- **Machine Learning**: OpenCV for image processing, EasyOCR for OCR
 - **Data Analysis**: NumPy, Pandas
 
 ## Installation
