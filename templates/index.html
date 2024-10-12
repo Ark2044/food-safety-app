@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>AI-Powered Food Safety Detection</title>
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Animate.css for Animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f9fa;
+      }
+      .fade-in {
+        animation: fadeIn 1.5s ease-in-out;
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-red-600 text-white py-4 px-6 shadow-lg">
+      <div class="flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold">Food Safety Detection</a>
+        <div class="space-x-6">
+          <a
+            href="{{ url_for('additive_detection') }}"
+            class="hover:text-gray-300 transition duration-300"
+            >Additive Detection</a
+          >
+          <a
+            href="{{ url_for('ingredient_analysis') }}"
+            class="hover:text-gray-300 transition duration-300"
+            >Ingredient Analysis</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container mx-auto mt-10 fade-in text-center">
+      <header class="animate__animated animate__fadeInDown">
+        <h1 class="text-5xl font-extrabold text-gray-800 mb-4">
+          AI-Powered Food Safety Detection
+        </h1>
+        <p class="text-lg text-gray-600 mb-6">
+          Ensure your food is safe and healthy with cutting-edge technology.
+        </p>
+        <a
+          href="#features"
+          class="mt-6 inline-block bg-red-600 text-white text-lg py-2 px-6 rounded-full shadow-lg hover:bg-red-700 transform hover:scale-105 transition duration-300"
+          >Learn More</a
+        >
+      </header>
+      <!-- Hero Image -->
+      <img
+        src="/static/img.jpg"
+        alt="AI Food Safety Detection"
+        class="mt-8 w-full h-auto rounded-lg shadow-lg animate__animated animate__fadeIn"
+      />
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="mt-16">
+      <h2
+        class="text-center text-3xl font-bold mb-10 text-gray-800 animate__animated animate__fadeInUp"
+      >
+        Features
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 container mx-auto px-6">
+        <!-- Feature 1 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 animate__animated animate__zoomIn"
+        >
+          <img
+            src="https://via.placeholder.com/600x400.png?text=Additive+Detection"
+            alt="Additive Detection"
+            class="w-full h-auto mb-4 rounded-lg"
+          />
+          <h3 class="text-2xl font-bold text-gray-700 mb-2">
+            Additive Detection
+          </h3>
+          <p class="text-gray-600">
+            Upload images to detect harmful food additives and E-codes.
+          </p>
+        </div>
+        <!-- Feature 2 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 animate__animated animate__zoomIn"
+        >
+          <img
+            src="https://via.placeholder.com/600x400.png?text=Ingredient+Analysis"
+            alt="Ingredient Analysis"
+            class="w-full h-auto mb-4 rounded-lg"
+          />
+          <h3 class="text-2xl font-bold text-gray-700 mb-2">
+            Ingredient Analysis
+          </h3>
+          <p class="text-gray-600">
+            Input a list of ingredients to analyze their safety and health
+            risks.
+          </p>
+        </div>
+        <!-- Feature 3 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 animate__animated animate__zoomIn"
+        >
+          <img
+            src="https://via.placeholder.com/600x400.png?text=Real-Time+Feedback"
+            alt="Real-time Feedback"
+            class="w-full h-auto mb-4 rounded-lg"
+          />
+          <h3 class="text-2xl font-bold text-gray-700 mb-2">
+            Real-time Feedback
+          </h3>
+          <p class="text-gray-600">
+            Get immediate results and insights on food safety with our AI
+            models.
+          </p>
+        </div>
+        <!-- Feature 4 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 animate__animated animate__zoomIn"
+        >
+          <img
+            src="https://via.placeholder.com/600x400.png?text=User-Friendly+Interface"
+            alt="User-Friendly Interface"
+            class="w-full h-auto mb-4 rounded-lg"
+          />
+          <h3 class="text-2xl font-bold text-gray-700 mb-2">
+            User-Friendly Interface
+          </h3>
+          <p class="text-gray-600">
+            Easily navigate through the app to find essential food safety data.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section
+      class="text-center mt-20 py-10 bg-red-600 text-white rounded-lg shadow-lg parallax-bg animate__animated animate__fadeIn"
+    >
+      <h2 class="text-3xl font-bold mb-4">Get Started</h2>
+      <p class="mb-8">Choose an option below to begin analyzing your food for safety:</p>
+      <div class="space-x-4">
+        <a
+          href="{{ url_for('additive_detection') }}"
+          class="inline-block bg-white text-red-600 py-2 px-6 rounded-full font-semibold shadow-lg hover:bg-gray-200 transform hover:scale-105 transition duration-300"
+          >Additive Detection</a
+        >
+        <a
+          href="{{ url_for('ingredient_analysis') }}"
+          class="inline-block bg-white text-red-600 py-2 px-6 rounded-full font-semibold shadow-lg hover:bg-gray-200 transform hover:scale-105 transition duration-300"
+          >Ingredient Analysis</a
+        >
+      </div>
+      <!-- Call-to-action Image -->
+      <img
+        src="https://via.placeholder.com/1200x400.png?text=Get+Started+with+AI+Food+Safety"
+        alt="Get Started with AI Food Safety"
+        class="mt-8 w-full h-auto rounded-lg shadow-lg"
+      />
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center mt-16 py-4 bg-gray-200 text-gray-600 fade-in">
+      <p>© 2024 AI-Powered Food Safety Detection. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

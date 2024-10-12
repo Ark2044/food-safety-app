@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detection Results</title>
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Animate.css for Animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f8f9fa;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <div
+      class="container mx-auto max-w-3xl p-8 mt-12 bg-white rounded-lg shadow-lg animate__animated animate__fadeIn"
+    >
+      <h1 class="text-4xl font-extrabold text-red-700 text-center mb-6">
+        Detection Results
+      </h1>
+
+      <!-- Extracted Text Section -->
+      <h2 class="text-2xl font-semibold text-gray-700 mb-4">Extracted Text:</h2>
+      <p class="text-gray-600 mb-8">{{ raw_text }}</p>
+
+      <!-- Harmful Additives Section -->
+      <h2 class="text-2xl font-semibold text-gray-700 mb-4">
+        Found Harmful Additives or E-Codes:
+      </h2>
+      <ul class="list-none space-y-4">
+        {% for status in harmful_status %}
+        <li
+          class="bg-red-100 text-red-800 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300"
+        >
+          {{ status }}
+        </li>
+        {% endfor %}
+      </ul>
+
+      <!-- Button Group Section -->
+      <div
+        class="flex flex-col md:flex-row items-center justify-between mt-8 space-y-4 md:space-y-0 md:space-x-4"
+      >
+        <a
+          href="{{ url_for('additive_detection') }}"
+          class="bg-red-600 text-white py-2 px-6 rounded-lg shadow-md hover:bg-red-700 transition duration-300 transform hover:scale-105"
+        >
+          Analyze Another Image
+        </a>
+        <a
+          href="https://resilient-git-nlxjhl.sandbox.livekit.io/"
+          class="bg-green-600 text-white py-2 px-6 rounded-lg shadow-md hover:bg-green-700 transition duration-300 transform hover:scale-105"
+        >
+          Ask the Expert
+        </a>
+        <a
+          href="{{ url_for('index') }}"
+          class="bg-blue-600 text-white py-2 px-6 rounded-lg shadow-md hover:bg-blue-700 transition duration-300 transform hover:scale-105"
+        >
+          Go Back
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

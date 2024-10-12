@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingredient Analysis</title>
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Animate.css for Animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md py-4 animate__animated animate__fadeInDown">
+      <div class="container mx-auto flex justify-between items-center px-6">
+        <a class="text-2xl font-bold text-red-700" href="#"
+          >Food Safety Detection</a
+        >
+        <div>
+          <ul class="flex space-x-6">
+            <li>
+              <a
+                href="{{ url_for('index') }}"
+                class="text-gray-600 hover:text-red-700 transition duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="{{ url_for('additive_detection') }}"
+                class="text-gray-600 hover:text-red-700 transition duration-300"
+                >Additive Detection</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Ingredient Analysis Section -->
+    <div
+      class="container mx-auto mt-12 px-4 animate__animated animate__fadeInUp"
+    >
+      <h1 class="text-center text-4xl font-extrabold text-red-700 mb-6">
+        Ingredient Analysis
+      </h1>
+      <p class="text-center text-gray-600 mb-10">
+        Enter a list of ingredients to check for safety.
+      </p>
+
+      <!-- Ingredient Input Form -->
+      <div class="flex justify-center">
+        <div class="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
+          <form method="post" class="space-y-6">
+            <div class="form-group">
+              <label for="ingredients" class="block text-gray-700 font-medium"
+                >Enter ingredients (comma-separated):</label
+              >
+              <textarea
+                id="ingredients"
+                name="ingredients"
+                class="w-full p-3 rounded-lg shadow-sm border-gray-300 focus:ring-red-700 focus:border-red-700"
+                rows="5"
+                placeholder="e.g., Sodium Nitrite, Hydrocyanic Acid, E321"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-red-600 text-white font-bold py-3 px-4 rounded-lg shadow-md hover:bg-red-700 transition duration-300"
+            >
+              Analyze Ingredients
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Results Section -->
+      {% if safety_issues %}
+      <div class="mt-12 text-center animate__animated animate__fadeInUp">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+          Analysis Results
+        </h2>
+        <div
+          class="bg-yellow-100 text-yellow-700 p-6 rounded-lg shadow-md inline-block"
+        >
+          <ul class="list-disc list-inside">
+            {% for issue in safety_issues %}
+            <li class="mt-2">{{ issue }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- Button Group for Navigation -->
+    <div
+      class="container mx-auto flex justify-between items-center mt-12 px-4 space-x-6"
+    >
+      <a
+        href="https://resilient-git-nlxjhl.sandbox.livekit.io/"
+        class="bg-green-600 text-white py-2 px-6 rounded-lg shadow-md hover:bg-green-700 transition duration-300 transform hover:scale-105"
+      >
+        Ask the Expert
+      </a>
+      <a
+        href="{{ url_for('index') }}"
+        class="bg-blue-600 text-white py-2 px-6 rounded-lg shadow-md hover:bg-blue-700 transition duration-300 transform hover:scale-105"
+      >
+        Go Back
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 text-center py-6 mt-12 shadow-inner">
+      <p class="text-gray-700">
+        © 2024 AI-Powered Food Safety Detection. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+Additive Name,E-Code,Common Uses,Harmfulness
+Fatal Additives,,,
+Acrylamide,,"Starchy fried foods (chips, fries)",Fatal
+Formaldehyde,,Preservative in processed foods,Fatal
+Potassium Bromate,E924,Dough conditioner in bread,Fatal
+Sodium Nitrite,E250,"Cured meats (sausages, bacon)",Fatal
+Benzene,,Forms in soft drinks,Fatal
+Ethylene Oxide,,Sterilizing agent in food processing,Fatal
+Hydrocyanic Acid,,Byproduct in certain food processing,Fatal
+Lead Acetate,,Rarely in some colorings,Fatal
+Cadmium,,Contaminant in some food products,Fatal
+Arsenic,,Contaminant in rice and seafood,Fatal
+Polychlorinated Biphenyls (PCBs),,Contaminants in fatty foods,Fatal
+BHA (Butylated Hydroxyanisole),E320,Preservative in fats and oils,Fatal
+BHT (Butylated Hydroxytoluene),E321,Preservative in processed foods,Fatal
+Mercury,,Contaminant in some fish,Fatal
+Chloroform,,Contaminant in some processed foods,Fatal
+Hexachlorobenzene,,Contaminant in certain food products,Fatal
+Vinyl Chloride,,Contaminant in some packaging,Fatal
+Dioxins,,Contaminants in some animal products,Fatal
+Diacetyl,,Flavoring agent in buttery flavored foods,Fatal
+Sodium Lauryl Sulfate,,Emulsifier in food products,Fatal
+Very Harmful Additives,,,
+Tartrazine,E102,"Chips, candies, soft drinks",Very harmful
+Allura Red,E129,"Candies, soft drinks",Very harmful
+Sunset Yellow,E110,"Soft drinks, candies",Very harmful
+Sodium Benzoate,E211,"Soft drinks, sauces",Very harmful
+Calcium Propionate,E282,Preservative in bread,Very harmful
+Sorbic Acid,E200,Preservative in cheeses and yogurt,Very harmful
+Sodium Nitrate,E251,Preservative in cured meats,Very harmful
+Monosodium Glutamate (MSG),E621,Flavor enhancer in instant noodles,Very harmful
+Phosphoric Acid,E338,Soft drinks,Very harmful
+Sodium Sulfite,E221,Preservative in dried fruits,Very harmful
+Sodium Tartrate,E335,Stabilizer in food products,Very harmful
+Sodium Metabisulfite,E223,Preservative in dried fruits,Very harmful
+Oxybenzone,,Used in some food packaging,Very harmful
+Polysorbate 80,E433,Emulsifier in ice cream,Very harmful
+Calcium Sulfate,E516,Firming agent in canned vegetables,Very harmful
+Alum,E523,Pickling agent,Very harmful
+Titanium Dioxide,E171,Food coloring in processed foods,Very harmful
+Moderately Harmful Additives,,,
+Benzene (from Sodium Benzoate),,"Soft drinks, condiments",Moderately harmful
+Potassium Sorbate,E202,Preservative in baked goods,Moderately harmful
+Sodium Erythorbate,E316,Preservative in meats,Moderately harmful
+Lactic Acid,E270,Preservative in dairy,Moderately harmful
+Xanthan Gum,E415,Thickener in sauces,Moderately harmful
+Guar Gum,E412,Thickener in ice creams,Moderately harmful
+Brominated Vegetable Oil,,Emulsifier in citrus-flavored sodas,Moderately harmful
+Sodium Phosphate,E339,Emulsifier in processed cheese,Moderately harmful
+Sodium Acetate,E262,Flavor enhancer in processed foods,Moderately harmful
+Tocopherols,E307,Antioxidant in fats and oils,Moderately harmful
+Phosphoric Acid,E338,Flavoring in cola drinks,Moderately harmful
+Calcium Carbonate,E170,Firming agent in vegetables,Moderately harmful
+Sodium Bicarbonate,E500,Baking agent in cookies,Moderately harmful
+Malic Acid,E296,Flavoring agent in candies,Moderately harmful
+Acetic Acid,E260,"Vinegar, food preservative",Moderately harmful
+Sodium Alginate,E401,Thickening agent in sauces and ice creams,Moderately harmful
+Sodium Acetate,E262,Flavor enhancer in processed foods,Moderately harmful
+Ethyl Vanillin,E1514,Flavor enhancer in desserts,Moderately harmful
+Calcium Ascorbate,E302,Preservative in juices,Moderately harmful
+Sodium Phosphate,E339,Stabilizer in processed cheese,Moderately harmful
+Glycerol,E422,Humectant in baked goods,Moderately harmful
+Dextrose,E200,Sweetener in beverages,Moderately harmful
+Starch,E1400,Thickener in sauces,Moderately harmful
+Pectin,E440,Gelling agent in jams,Moderately harmful
+Ethyl Acetate,,Used as a flavoring agent,Moderately harmful
+Calcium Sorbate,E203,Preservative in dairy products,Moderately harmful
+Agar-Agar,E406,Gelling agent in desserts,Moderately harmful
+Lecithin,E322,Emulsifier in chocolates,Moderately harmful
+Chitosan,,"Food preservative, fat binder",Moderately harmful
+Maltodextrin,,Thickening agent in sauces,Moderately harmful
+Beta-Carotene,E160a,Natural color in margarine,Moderately harmful
+Safe Additives,,,
+Ascorbic Acid (Vitamin C),E300,Antioxidant in fruit juices,Safe
+Lactic Acid,E270,Preservative in dairy,Safe
+Citric Acid,E330,Preservative in beverages,Safe
+Acetic Acid,E260,Preservative in vinegar,Safe
+Xanthan Gum,E415,Thickener in salad dressings,Safe
+Guar Gum,E412,Thickener in ice cream,Safe
+Pectin,E440,Gelling agent in jams,Safe
+Agar-Agar,E406,Gelling agent in desserts,Safe
+Vitamin E (Tocopherols),E307,Antioxidant in oils,Safe
+Calcium Carbonate,E170,Antacid in food,Safe
